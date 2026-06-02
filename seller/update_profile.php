@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $password = password_hash($_POST["password"], PASSWORD_DEFAULT); // Hash the password
 
   // Update the user's profile in the database
-  $query = "UPDATE users SET username='$username', email='$email', phone='$phone', password='$password' WHERE id='$user_id'";
+  $query = "UPDATE users SET username='$username', email='$email', phone='$phone', password="YOUR_OWN_API_KEY" WHERE id='$user_id'";
   $result = mysqli_query($conn, $query);
 
   if ($result) {
