@@ -73,7 +73,7 @@ if (mysqli_query($conn, $sql_insert_order)) {
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
     $mail->Username = 'nasiryt.827@gmail.com';
-    $mail->Password = 'mtvp ruzp aqfu tfxt';
+    $mail->Password = "YOUR_OWN_API_KEY";
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
 
